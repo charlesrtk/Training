@@ -11,7 +11,61 @@
             Configurações básicas
 ================================================*/
 
+/*---------------- # body  # --------------------*/
+
+body{
+    background-color: #ccc;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*---------------- # font # --------------------*/
+.font120{
+    font-size: 1.2em;
+}
+.subtitulo {
+    font-size: 2.0em;
+}
+
+/*---------------- # espaçamento # --------------------*/
+.esquerda {
+    text-align: left;
+}
+
+.espaco_abaixo {
+    margin-bottom: 0.5em;
+}
+
+.continua {
+    border-collapse: collapse;
+} 
+
+/*================================================
+            Configurações básicas
+================================================*/
+
 table{
-    width: 20%;
+    width: 30%;
+    height: 200px;
     margin: 80px auto;
+    background-color: #fff;
+}
+
+/*A configuração de espaçamento e margens da tabela ocorre a nível das células (th, td e não a nível de tr)*/
+th, td{
+    padding: 10px;
+    border-bottom: 1px solid darkgrey;
+}
+
+
+thead tr:last-child, tbody > tr:last-child{
+    border-bottom: 3px solid #000;   
+}
+
+/*pseudoclasse nth-child ()*/
+tbody tr:nth-child(odd){
+    background-color: beige;
+}
+
+tbody tr:hover{
+    background-color: darkgrey;
 }
